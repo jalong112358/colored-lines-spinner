@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.App {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  background: black;
+  padding-top: 100px;
+}
+
+h3 {
+  color: white;
+
+  margin-bottom: 10px;
+}
+p {
+  margin-top: 15px;
+  color: white;
+}
+.wrapper {
+  width: 800px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  position: relative;
+  width: 800px;
+  height: 800px;
+
+  border-radius: 400px;
+}
+
+.circle div {
+  position: absolute;
+  top: 400px;
+  left: 0;
+  width: 800px;
+  height: 1px;
+  border: 0.5px solid;
+}
+
+.controls-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 300px;
+  height: 500px;
+  margin-left: 150px;
+}
+.control {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.auto-slide {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.play {
+  display: none;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  border-left: 15px solid rgb(255, 255, 255);
+  margin-left: 15px;
+}
+.play.open {
+  display: block;
+}
+
+.pause {
+  display: none;
+  justify-content: space-between;
+  width: 15px;
+  height: 20px;
+  margin-left: 16px;
+}
+.pause.open {
+  display: flex;
+}
+.pause-block {
+  display: inline-block;
+  width: 5px;
+  height: 20px;
+  background: white;
+}
+
+.effects {
+  margin-top: 50px;
+}
